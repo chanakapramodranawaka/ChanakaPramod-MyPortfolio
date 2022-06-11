@@ -1,0 +1,96 @@
+@import url('http://fonts.cdnfonts.com/css/snap-itc');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:ital,wght@0,500;0,700;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary-font-color: #fff;
+    --primary-font-family: 'Lora', serif; 
+}
+
+#home{
+    background-color: #434D45;
+    height: 100vh;
+}
+
+#feeld-set{
+    position: absolute;
+    margin-top: 20vh;
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    position: relative;
+    text-align: center;
+    color: #7E7A7E;
+    font-family: 'Snap ITC', sans-serif;
+    font-size: 9.375rem;
+}
+
+.home-greething-text h2{
+    font-size: 5vh;
+    font-weight: 100;
+    font-family: var(--primary-font-family);
+    letter-spacing: 5px;
+    color: var(--primary-font-color);
+    opacity: 0.5;
+}
+
+.home-animation-text p{
+    font-size: 4vh;
+    font-weight: bold;
+    font-family: var(--primary-font-family);
+    color: var(--primary-font-color);
+    padding: 20px;
+    display: inline;
+}
+
+/* Animation-slide-ball */
+.slide-animation{
+    position: relative;
+    bottom: -550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slide-border{
+    position: relative;
+    width: 160px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+.slide-boll{
+    position: relative;
+    width: 53.33px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    top: 3px;
+    left: 5px;
+
+    /* animtion */
+    animation-name: run_ball;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* keyframes */
+@keyframes run_ball{
+    0%{
+        right: 100px;
+        width: 50px;
+    }
+
+    50%{
+        left: 100px;
+    }
+}
